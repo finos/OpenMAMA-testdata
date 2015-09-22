@@ -1,0 +1,12 @@
+# The route location of the OpenMAMA install. You may need to change this if
+# you have installed OpenMAMA in a non-standard location.
+export OPENMAMA_HOME=/opt/openmama
+
+# The path OpenMAMA searches for configuration (mama.properties) files
+export WOMBAT_PATH=$OPENMAMA_HOME/config
+
+# Setting the library path to point to the OpenMAMA libraries.
+export LD_LIBRARY_PATH=$OPENMAMA_HOME/lib:$LD_LIBRARY_PATH
+
+# Adding the binary directory so we can execute example applications directly.
+export PATH=$PATH:$OPENMAMA_HOME/bin
